@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Oficial - JR Móveis Definitivos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .carousel-item img {
+            width: 100%;
+           
+            height: 800px; /* Altura desejada */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 id="titulo" class="navbar-brand m-0 section-title">JR Móveis Definitivos</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-marcenaria" id="link-sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a marcenaria
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#projetos" id="link-projetos" class="nav-link">
+                            <i class="bi bi-journal me-1"></i>
+                            Projetos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" id="link-fale" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/carousel/Foto1.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/Foto2.jpg" alt="Duas taças de vinho" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/Foto3.jpg" alt="Uma mesa com comida" class="d-block w-100">
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/Foto.jpg" alt="Foto do espaço interno da marcenaria" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 id="section-title" class="section-title">Sobre a marcenaria</h2>
+                            <p>
+                                A marcenaria JR Móveis é uma empresa especializada em projetos de alto padrão, destacando-se por sua experiência de 10 anos no mercado. Especializada na execução de projetos para profissionais da arquitetura e design, a empresa oferece soluções sob medida, combinando expertise e qualidade para atender às demandas exclusivas de seus clientes. Com um compromisso com a excelência, a marcenaria destaca-se no segmento, proporcionando móveis personalizados e projetos que refletem a sofisticação e a qualidade característica de seus serviços.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Função para misturar duas cores
+        function mixColors(color1, color2) {
+            // Converter as cores hexadecimais em valores RGB
+            var r1 = parseInt(color1.substring(1, 3), 16);
+            var g1 = parseInt(color1.substring(3, 5), 16);
+            var b1 = parseInt(color1.substring(5, 7), 16);
+            var r2 = parseInt(color2.substring(1, 3), 16);
+            var g2 = parseInt(color2.substring(3, 5), 16);
+            var b2 = parseInt(color2.substring(5, 7), 16);
+
+            // Misturar os componentes RGB
+            var r = Math.round((r1 + r2) / 2);
+            var g = Math.round((g1 + g2) / 2);
+            var b = Math.round((b1 + b2) / 2);
+
+            // Retornar a cor resultante como uma string hexadecimal
+            return '#' + r.toString(16).padStart(2, '0') +
+                           g.toString(16).padStart(2, '0') +
+                           b.toString(16).padStart(2, '0');
+        }
+
+        // Cores a serem misturadas
+        var prata = "#C0C0C0";
+        var ouro = "#DAA520";
+
+        // Selecionar o elemento h1 e h2 pelo ID
+        var h1 = document.getElementById('titulo');
+        var h2 = document.getElementById('section-title');
+        
+        // Selecionar os links e aplicar a cor misturada
+        var linkSobre = document.getElementById('link-sobre');
+        var linkProjetos = document.getElementById('link-projetos');
+        var linkFale = document.getElementById('link-fale');
+
+        // Misturar as cores e atribuir ao estilo do h1 e h2
+        h1.style.color = mixColors(prata, ouro);
+        h2.style.color = mixColors(prata, ouro);
+        
+        // Misturar as cores e atribuir ao estilo dos links
+        linkSobre.style.color = mixColors(prata, ouro);
+        linkProjetos.style.color = mixColors(prata, ouro);
+        linkFale.style.color = mixColors(prata, ouro);
+    </script>
+</body>
+</html>
