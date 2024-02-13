@@ -18,6 +18,10 @@ body{
     background-color: #8B4513;
     color: #fff;
 }
+
+#cabecalho .nav-link.active{
+    background-color: #fff;
+}
 @media (max-width: 767px) {
     .carousel-item img {
         height: 30vw; /* Utilizando a unidade 'vw' (viewport width) para tornar a altura proporcional à largura da tela */
