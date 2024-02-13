@@ -96,8 +96,9 @@
         <section id="projetos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center mb-5">
-                        Nossos projetos</h2>
+                    <h2 id="section-title" class="section-title text-center mb-5">
+                        Nossos projetos
+                    </h2>
                 </div>
                 <div class="row">
                     <aside class="col-md-2">
@@ -346,6 +347,7 @@
         var h2 = document.getElementById('section-title');
         var navLinks = document.querySelectorAll('nav ul li a');
         var navButtons = document.querySelectorAll('.nav-projetos button');
+        
 
         // Misturar as cores e atribuir ao estilo dos títulos
         h1.style.color = mixColors(prata, ouro);
@@ -355,6 +357,9 @@
         navLinks.forEach(function(link) {
             link.style.color = mixColors(prata, ouro);
         });
+        // Misturar as cores e atribuir ao estilo do título "Nossos projetos"
+        var h2Projetos = document.getElementById('section-title');
+        h2Projetos.style.color = mixColors(prata, ouro);
 
         // Misturar as cores e atribuir ao estilo dos botões do navbar
         navButtons.forEach(function(button) {
