@@ -104,7 +104,7 @@
                     <aside class="col-md-2">
                         <nav class="nav nav-pills flex-column nav-projetos">
                             <button type="button" data-bs-toggle="tab" data-bs-target="#quartos" class="fw-bold text-start nav-link text-colored active">Quartos</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#hall" class="fw-bold text-start nav-link text-colored">Hall</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#salas" class="fw-bold text-start nav-link text-colored">Salas</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#cozinha" class="fw-bold text-start nav-link text-colored">Cozinha</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#closet" class="fw-bold text-start nav-link text-colored">Closet</button>
                         </nav>
@@ -223,23 +223,44 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="hall">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="Cerveja"/>
-                                        <h5 class=" fw-bold mt-2">Cerveja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                            <div class="tab-pane" id="salas">
+                                <div class="row mt-2">
+                                    <div class="col-md-6">
+                                        <div id="carouselSalaJantar" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/projetos/salas/salas-jantar/Foto1.jpg" class="d-block w-100" alt="Foto 1 de uma sala de jantar">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/projetos/salas/salas-jantar/Foto2.jpg" class="d-block w-100" alt="Foto 2 de um sala de jantar">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/projetos/salas/salas-jantar/Foto3.jpg" class="d-block w-100" alt="Foto 3 de um sala de jantar">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalaJantar" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselSalaJantar" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselSalaJantar" class="active" data-bs-slide-to="0"></button>
+                                                <button type="button" data-bs-target="#carouselSalaJantar" data-bs-slide-to="1"></button>
+                                                <button type="button" data-bs-target="#carouselSalaJantar" data-bs-slide-to="2"></button>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Vinho"/>
-                                        <h5 class=" fw-bold mt-2">Vinho</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                                    <div class="col-md-6">
+                                        <h3 id="sala-jantar" class="text-center">Sala de jantar</h3>
+                                        <p>Partindo do tema “Corpo e Morada”, a concepção da nossa sala de jantar teve como princípio a ideia de que este ambiente é uma extensão do nosso próprio corpo. Assim como cuidamos e decoramos nosso corpo, buscamos criar um espaço que refletisse essa conexão íntima e pessoal. Desde a escolha dos móveis até os detalhes da decoração, cada elemento foi pensado para proporcionar conforto, acolhimento e harmonia, convidando todos os sentidos a se envolverem e desfrutarem deste espaço.</p>
                                     </div>
+                                    
                                 </div>
+                                
                             </div>
                             <div class="tab-pane" id="cozinha">
                                 <div class="row">
@@ -349,6 +370,7 @@
         var h3QuartoBebe = document.getElementById('quarto-bebe');
         var h3QuartoInfantil = document.getElementById('quarto-infantil');
         var h3QuartoCasal = document.getElementById('quarto-casal');
+        var h3Sala = document.getElementById('sala-jantar');
         var navLinks = document.querySelectorAll('nav ul li a');
         var navButtons = document.querySelectorAll('.nav-projetos button');
     
@@ -359,6 +381,7 @@
         h3QuartoBebe.style.color = mixColors(prata, ouro);
         h3QuartoInfantil.style.color = mixColors(prata, ouro);
         h3QuartoCasal.style.color = mixColors(prata, ouro);
+        h3Sala.style.color = mixColors(prata, ouro);
     
         // Misturar as cores e atribuir ao estilo dos links do navbar
         navLinks.forEach(function(link) {
