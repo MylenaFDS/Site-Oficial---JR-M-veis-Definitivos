@@ -107,6 +107,7 @@
                             <button type="button" data-bs-toggle="tab" data-bs-target="#salas" class="fw-bold text-start nav-link text-colored">Salas</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#cozinha" class="fw-bold text-start nav-link text-colored">Cozinha</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#area-gourmet" class="fw-bold text-start nav-link text-colored">Área gourmet</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#hall" class="fw-bold text-start nav-link text-colored">Hall</button><button type="button" data-bs-toggle="tab" data-bs-target="#closet" class="fw-bold text-start nav-link text-colored">Closet</button>
                         </nav>
                     </aside>
                     
@@ -339,51 +340,88 @@
                                 </div>
                             </div>
                             <div class="tab-pane" id="area-gourmet">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="Pizza"/>
-                                        <h5 class=" fw-bold mt-2">Pizza</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                                <div class="row mt-2">
+                                    <div class="col-md-6">
+                                        <div id="carouselAreaGourmet" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/projetos/area-gourmet/Foto1.jpg" class="d-block w-100" alt="Foto 1 de um hall de entrada">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/projetos/area-gourmet/Foto2.jpg" class="d-block w-100" alt="Foto 2 de um hall de entrada">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/projetos/area-gourmet/Foto3.jpg" class="d-block w-100" alt="Foto 3 de um hall de entrada">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAreaGourmet" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAreaGourmet" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselAreaGourmet" class="active" data-bs-slide-to="0"></button>
+                                                <button type="button" data-bs-target="#carouselAreaGourmet" data-bs-slide-to="1"></button>
+                                                <button type="button" data-bs-target="#carouselAreaGourmet" data-bs-slide-to="2"></button>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="Salmão"/>
-                                        <h5 class=" fw-bold mt-2">Salmão</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                                    <div class="col-md-6">
+                                        <h3 id="area-gourmet" class="text-center">Área gourmet</h3>
+                                        <p></p>
                                     </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="Pizza"/>
-                                        <h5 class=" fw-bold mt-2">Pizza</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                    <div class="tab-pane" id="hall">
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div id="carouselHall" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/projetos/hall/Foto1.jpg" class="d-block w-100" alt="Foto 1 de um hall de entrada">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/projetos/hall/Foto2.jpg" class="d-block w-100" alt="Foto 2 de um hall de entrada">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/projetos/hall/Foto3.jpg" class="d-block w-100" alt="Foto 3 de um hall de entrada">
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="Salmão"/>
-                                        <h5 class=" fw-bold mt-2">Salmão</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHall" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHall" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselHall" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carouselHall" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carouselHall" data-bs-slide-to="2"></button>
+                                        
                                     </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="Pizza"/>
-                                        <h5 class=" fw-bold mt-2">Pizza</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="Salmão"/>
-                                        <h5 class=" fw-bold mt-2">Salmão</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 id="hall" class="text-center">Hall de entrada</h3>
+                                <p>Neste hall de entrada, a atenção aos detalhes é evidente. Destacamos uma porta de marcenaria especial, onde a porta pivotante oculta se destaca, proporcionando uma entrada elegante e sofisticada. O puxador cava extremamente discreto adiciona um toque de sutileza ao ambiente, demonstrando a nossa paixão por uma marcenaria especial e bem executada. O resultado final é verdadeiramente espetacular, refletindo nossa dedicação ao design e à qualidade. Uma porta que tem seu lugar, sem dúvida alguma!</p>
+                            </div>
+                            
+                            
+                            
+                            
                         </div>
                     </div>
+                    
                     
         </section>
     </div>
@@ -424,6 +462,8 @@
         var h3SalaJantar = document.getElementById('sala-jantar');
         var h3SalaEstar = document.getElementById('sala-estar');
         var h3Cozinha = document.getElementById('cozinha');
+        var h3Hall = document.getElementById('hall');
+        var h3AreaGourmet = document.getElementById('area-gourmet');
         var navLinks = document.querySelectorAll('nav ul li a');
         var navButtons = document.querySelectorAll('.nav-projetos button');
     
@@ -437,6 +477,8 @@
         h3SalaJantar.style.color = mixColors(prata, ouro);
         h3SalaEstar.style.color = mixColors(prata, ouro);
         h3Cozinha.style.color = mixColors(prata, ouro);
+        h3Hall.style.color = mixColors(prata, ouro);
+        h3AreaGourmet.style.color = mixColors(prata, ouro);
         // Misturar as cores e atribuir ao estilo dos links do navbar
         navLinks.forEach(function(link) {
             link.style.color = mixColors(prata, ouro);
