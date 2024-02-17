@@ -372,8 +372,9 @@
                                     </div>
                                     <div class="col-md-6">
                                         <h3 id="area-gourmet" class="text-center">Área gourmet</h3>
-                                        <p></p>
+                                        <p>A área gourmet é o espaço perfeito para reunir amigos e familiares e desfrutar de momentos deliciosos juntos. Equipada com os mais modernos eletrodomésticos, esta área é projetada para proporcionar experiências culinárias incríveis. Seja para um churrasco ao ar livre, um jantar sofisticado ou uma simples refeição entre amigos, a área gourmet é o coração da casa, onde os sabores se encontram e as memórias são criadas.</p>
                                     </div>
+                                    
                                     
                                     
                                     
@@ -421,8 +422,46 @@
                             
                         </div>
                     </div>
+                    <div class="tab-pane" id="closet">
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div id="carouselCloset" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/projetos/closet/Foto1.jpg" class="d-block w-100" alt="Foto 1 de um hall de entrada">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/projetos/closet/Foto2.jpg" class="d-block w-100" alt="Foto 2 de um hall de entrada">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/projetos/closet/Foto3.jpg" class="d-block w-100" alt="Foto 3 de um hall de entrada">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCloset" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCloset" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselCloset" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carouselCloset" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carouselCloset" data-bs-slide-to="2"></button>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 id="closet" class="text-center">Closet</h3>
+                                <p>Cada detalhe deste closet é simplesmente encantador! O armário em formato de U, sem portas, oferece praticidade com seus maleiros espaçosos, proporcionando organização sem sacrificar o estilo. A ilha central é um destaque, com suas gavetas funcionais, tornando-se um elemento indispensável para o armazenamento inteligente. E a penteadeira, com seus nichos bem pensados, adiciona um toque de elegância e funcionalidade ao ambiente. Este closet é mais do que um espaço para guardar roupas - é um verdadeiro refúgio de estilo e organização.</p>
+                            </div>
+                        </div>
+                    </div>
                     
-                    
+                    <a href="https://www.instagram.com/stories/highlights/18013352026849206/"  class="text-center mt-3" style="text-decoration: none; display: block; margin-left: auto; margin-right: auto;"><h5 id="outros-projetos">Clique aqui para ver outros projetos</h5></a>
+
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -464,6 +503,9 @@
         var h3Cozinha = document.getElementById('cozinha');
         var h3Hall = document.getElementById('hall');
         var h3AreaGourmet = document.getElementById('area-gourmet');
+        var h3Closet = document.getElementById('closet');
+        var h3Closet = document.getElementById('closet');
+        var h5OutrosProjetos = document.getElementById('outros-projetos');
         var navLinks = document.querySelectorAll('nav ul li a');
         var navButtons = document.querySelectorAll('.nav-projetos button');
     
@@ -479,6 +521,8 @@
         h3Cozinha.style.color = mixColors(prata, ouro);
         h3Hall.style.color = mixColors(prata, ouro);
         h3AreaGourmet.style.color = mixColors(prata, ouro);
+        h3Closet.style.color = mixColors(prata, ouro);
+        h5OutrosProjetos.style.color = mixColors(prata, ouro);
         // Misturar as cores e atribuir ao estilo dos links do navbar
         navLinks.forEach(function(link) {
             link.style.color = mixColors(prata, ouro);
