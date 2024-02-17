@@ -1,6 +1,6 @@
-// Função para detectar o sistema operacional
 function detectarSistemaOperacional() {
     var platform = navigator.platform;
+    console.log("Plataforma do navegador:", platform); // Adiciona esta linha para depurar
     if (platform.match(/Win/i)) {
         return "Windows";
     } else if (platform.match(/Mac/i)) {
