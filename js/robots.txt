@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /diretorio-bloqueado/
+Allow: /diretorio-permitido/
+Sitemap: https://jrmoveisdefinitivos-git-projetositejr-mylenafds.vercel.app/sitemap.xml
