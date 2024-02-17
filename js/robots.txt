@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /diretorio-bloqueado/
 Allow: /diretorio-permitido/
-Sitemap: https://jrmoveisdefinitivos.vercel.app/sitemap.xml
+Sitemap: https://vercel.com/mylenafds/jrmoveisdefinitivos/deployments/sitemap.xml
