@@ -12,6 +12,14 @@ body{
 
 .navbar-toggler{
     background-color:  #8B4513;
+    border: none;
+    padding: 0.25rem 0.5rem; /* Adiciona um espaçamento interno ao ícone */
+}
+
+/* Estilo para remover a borda preta que aparece ao clicar no ícone do menu hambúrguer */
+.navbar-toggler:focus {
+    outline: none; /* Remove o contorno ao focar */
+    box-shadow: none; /* Remove a sombra ao focar */
 }
 
 .nav-projetos .nav-link.active,
