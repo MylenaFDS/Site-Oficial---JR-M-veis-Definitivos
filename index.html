@@ -463,6 +463,68 @@
                     <a href="https://www.instagram.com/stories/highlights/18013352026849206/"  class="text-center mt-3" style="text-decoration: none; display: block; margin-left: auto; margin-right: auto;"><h5 id="outros-projetos">Clique aqui para ver outros projetos</h5></a>
 
         </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text" id="nome" class="form-control"required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="e-mail" class="form-label fw-bold text-colored">Seu e-mail:</label>
+                                <input type="e-mail" id="e-mail" class="form-control"required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone(opcional):</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem:</label>
+                                <textarea name="" id="mensagem" cols="30" rows="10" class="form-control"required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links" style="list-style-type: none; padding: 0;">
+                                <li class="fs-5 ms-1 me-1" >
+                                    <a href="https://www.instagram.com/jrmoveisdefinitivos/"id="link-insta">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1" >
+                                    <a href="https://api.whatsapp.com/send?phone=5531988574067&1=pt_BR" id="link-whats">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Avenida Antonio Mourão Guimarães, 682, Jardim Encantado, São José da Lapa/MG - CEP 33350-000
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -506,8 +568,12 @@
         var h3Closet = document.getElementById('closet');
         var h3Closet = document.getElementById('closet');
         var h5OutrosProjetos = document.getElementById('outros-projetos');
+        var LinkInstagram = document.getElementById('link-insta');
+        var LinkWhatsapp = document.getElementById('link-whats');
+        var FaleConosco = document.getElementById('fale-conosco');
         var navLinks = document.querySelectorAll('nav ul li a');
         var navButtons = document.querySelectorAll('.nav-projetos button');
+        
     
         // Misturar as cores e atribuir ao estilo dos títulos
         h1.style.color = mixColors(prata, ouro);
@@ -523,6 +589,9 @@
         h3AreaGourmet.style.color = mixColors(prata, ouro);
         h3Closet.style.color = mixColors(prata, ouro);
         h5OutrosProjetos.style.color = mixColors(prata, ouro);
+        FaleConosco.style.color = mixColors(prata, ouro);
+        LinkInstagram.style.color = mixColors(prata, ouro);
+        LinkWhatsapp.style.color = mixColors(prata, ouro);
         // Misturar as cores e atribuir ao estilo dos links do navbar
         navLinks.forEach(function(link) {
             link.style.color = mixColors(prata, ouro);
