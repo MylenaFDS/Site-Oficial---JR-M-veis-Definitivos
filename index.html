@@ -482,14 +482,14 @@
                                 <input type="email" id="email" name="email" placeholder="name@example.com" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
+                                <label for="telefone" name="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
                                 <input type="tel" id="telefone" placeholder="+00 (00) 0 0000-0000" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem:</label>
                                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control" placeholder="Mensagem" required></textarea>
                             </div>
-                            <div id="mensagem-erro"></div>
+                            <div id="mensagemErro"></div>
                             <div id="mensagemSucesso"></div>
                         
                             <button type="submit" class="btn fw-bold">Enviar</button>
@@ -626,40 +626,7 @@
             button.style.color = mixColors(prata, ouro);
         });
     </script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                user_id: 'user_YOUR_USER_ID', // Não precisa disso com o EmailJS Connect
-                service_id: 'service_0mk1eo6', // ID do seu serviço de EmailJS
-            });
-        })();
     
-        document.getElementById('messageForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-    
-            // Pegar os valores do formulário
-            var nome = document.getElementById('nome').value;
-            var email = document.getElementById('email').value;
-            var telefone = document.getElementById('telefone').value;
-            var mensagem = document.getElementById('mensagem').value;
-    
-            // Enviar os valores do formulário para o EmailJS
-            emailjs.send('service_0mk1eo6', 'template_1ymg5od', {
-                "from_name": nome,
-                "from_email": email,
-                "telefone": telefone,
-                "mensagem_html": mensagem
-            })
-            .then(function(response) {
-                console.log('Sucesso!', response.status, response.text);
-                document.getElementById('mensagemSucesso').innerHTML = "Mensagem enviada com sucesso!";
-            }, function(error) {
-                console.log('Erro :(', error);
-                document.getElementById('mensagemErro').innerHTML = "Ocorreu um erro ao enviar a mensagem.";
-            });
-        });
-    </script>
     
     
     
