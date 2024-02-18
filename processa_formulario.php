@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = $_POST['mensagem'];
 
     // Endereço de e-mail para onde a mensagem será enviada
-    $destinatario = "jrmoveisdefinitivos@gmail.com"; // Substitua pelo seu endereço de e-mail
+    $destinatario = "mylenafds@gmail.com"; // Substitua pelo seu endereço de e-mail
 
     // Construindo o corpo do e-mail
     $assunto = "Nova mensagem de Fale Conosco";
