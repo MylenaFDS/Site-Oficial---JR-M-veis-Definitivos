@@ -71,14 +71,16 @@ $(document).ready(function(){
     // Adicionar scripts do EmailJS
     (function(){
         emailjs.init({
-            // user_id: 'user_YOUR_USER_ID', // Não precisa disso com o EmailJS Connect
+            user_id: 'SgwNRYGq9EA42YvEM',
             service_id: 'service_0mk1eo6', // ID do seu serviço de EmailJS
         });
     })();
+    
 
     document.getElementById('messageForm').addEventListener('submit', function(event) {
         event.preventDefault();
-
+        console.log('Enviando formulário...');
+        console.log('Imprimindo chave pública...');
         // Pegar os valores do formulário
         var nome = document.getElementById('nome').value;
         var email = document.getElementById('email').value;
