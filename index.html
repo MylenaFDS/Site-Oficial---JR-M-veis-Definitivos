@@ -472,7 +472,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 mb-5">
-                        <form id="messageForm" action="processa_formulario.php" method="POST">
+                        <form id="messageForm">
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
                                 <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required>
@@ -626,6 +626,41 @@
             button.style.color = mixColors(prata, ouro);
         });
     </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                user_id: 'user_YOUR_USER_ID', // Não precisa disso com o EmailJS Connect
+                service_id: 'service_0mk1eo6', // ID do seu serviço de EmailJS
+            });
+        })();
+    
+        document.getElementById('messageForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            // Pegar os valores do formulário
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var telefone = document.getElementById('telefone').value;
+            var mensagem = document.getElementById('mensagem').value;
+    
+            // Enviar os valores do formulário para o EmailJS
+            emailjs.send('service_0mk1eo6', 'template_1ymg5od', {
+                "from_name": nome,
+                "from_email": email,
+                "telefone": telefone,
+                "mensagem_html": mensagem
+            })
+            .then(function(response) {
+                console.log('Sucesso!', response.status, response.text);
+                document.getElementById('mensagemSucesso').innerHTML = "Mensagem enviada com sucesso!";
+            }, function(error) {
+                console.log('Erro :(', error);
+                document.getElementById('mensagemErro').innerHTML = "Ocorreu um erro ao enviar a mensagem.";
+            });
+        });
+    </script>
+    
     
     
 </body>
