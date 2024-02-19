@@ -48,10 +48,10 @@ $(document).ready(function(){
         
             // Enviar os valores do formulário para o EmailJS
             emailjs.send('service_0mk1eo6', 'template_1ymg5od', {
-                "from_name": nome,
-                "from_email": email,
+                "nome": nome,
+                "email": email,
                 "telefone": telefone,
-                "mensagem_html": mensagem
+                "mensagem": mensagem
             })
             .then(function(response) {
                 console.log('Sucesso!', response.status, response.text);
