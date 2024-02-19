@@ -21,7 +21,7 @@ $(document).ready(function(){
     console.log("Sistema Operacional: " + sistemaOperacional);
 
     // Aplicar máscaras aos campos
-    $('#telefone').mask('+00 (00) 0 0000-0000');
+    $('#telefone').mask('+55 (00) 0 0000-0000');
     
     emailjs.init('ksXbBXjp0VhIH57I4');
     
