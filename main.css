@@ -37,6 +37,10 @@ section p {
     color: #8B4513;
     font-size: 15px;
 }
+
+footer p{
+    color: #CDC090;
+}
 @media (max-width: 767px) {
     .carousel-item img {
         height: 30vw; /* Utilizando a unidade 'vw' (viewport width) para tornar a altura proporcional à largura da tela */
