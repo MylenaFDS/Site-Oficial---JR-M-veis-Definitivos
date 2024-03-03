@@ -6,7 +6,7 @@ body{
 
 
   .navbar {
-    background-color: #8B4513;
+    background-color: #6d340c;
 }
 
 
@@ -24,7 +24,7 @@ body{
 
 .nav-projetos .nav-link.active,
 #fale-conosco button{
-    background-color: #8B4513;
+    background-color: #6d340c;
     color: #fff;
 }
 
