@@ -32,6 +32,13 @@ body{
     background-color: #fff;
 }
 
+.carousel-item img {
+    width: 100%;
+   
+    height: 400px; /* Altura desejada */
+    object-fit: cover;
+}
+
 section p {
     font-family: 'Roboto', sans-serif;
     color:  #D2B48C;/* Um tom claro que lembra a cor da madeira */
