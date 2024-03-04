@@ -75,21 +75,3 @@ $(document).ready(function(){
     });
 });
 
-const express = require('express');
-const app = express();
-
-// Define o middleware para definir os cabeçalhos de cache
-app.use((req, res, next) => {
-    // Define o cabeçalho Cache-Control para os recursos estáticos
-    // Exemplo: Cache TTL de 1 dia
-    res.set('Cache-Control', 'public, max-age=86400');
-    next();
-});
-
-// Rotas para os recursos estáticos
-app.use(express.static('public'));
-
-// Inicia o servidor
-app.listen(3000, () => {
-    console.log('Servidor iniciado na porta 3000');
-});
