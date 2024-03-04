@@ -51,7 +51,7 @@ footer p{
 @media (max-width: 767px) {
     .carousel-item img {
         height: 30vw; /* Utilizando a unidade 'vw' (viewport width) para tornar a altura proporcional à largura da tela */
-        max-height: 280px; /* Definindo uma altura máxima para garantir que as imagens não fiquem muito grandes em dispositivos com telas muito largas */
+        max-height: 400px; /* Definindo uma altura máxima para garantir que as imagens não fiquem muito grandes em dispositivos com telas muito largas */
         object-fit: cover; /* Garantindo que a imagem cubra todo o espaço do contêiner */
     }
 }
